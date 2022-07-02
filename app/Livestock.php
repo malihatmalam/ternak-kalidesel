@@ -27,4 +27,19 @@ class Livestock extends Model
     {
         return $this->belongsTo('App\Order', 'orders','id');
     }
+
+    public function disease()
+    {
+        return $this->hasMany('App\DiagnosisLivestock');
+    }
+
+    public function getConditionAttribute()
+    { 
+        $condition = 'sehat';
+        if($this->disease->where('status', 'terjangkit')->first() != null){
+            $condition = 'sakit';
+        }
+
+        return $condition;
+    }
 }

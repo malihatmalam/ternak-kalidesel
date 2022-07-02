@@ -34,6 +34,14 @@ class DashboardMGController extends Controller
         $jumlah_batal = $order_batal->count();
         $jumlah_kirim = $order_kirim->count(); 
 
+        $count_livestock_infected = Livestock::where('status', '!=', 'mati')
+        ->where('status', '!=', 'Sudah dibeli')
+        ->whereHas('disease', function ($query) 
+        {
+            $query->where('status', 'terjangkit');
+        })
+        ->get()->count(); // Jumlah hewan yang terjangkit 
+
         
         return view('manajemen.manajemen_dashboard', compact(
         'order',
@@ -46,7 +54,8 @@ class DashboardMGController extends Controller
         'jumlah_sukses',
         'jumlah_menunggu',
         'jumlah_batal',
-        'jumlah_kirim'
+        'jumlah_kirim',
+        'count_livestock_infected'
         ));
     }
 }

@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Ternak Pak Abdullah</title>
+    <title>Ternak Kalidesel</title>
     <!-- ICONS -->    
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset('admin/assets/images/Logo Ternak Singel.png')}}">
 <!--
@@ -63,11 +63,11 @@ https://templatemo.com/tm-558-klassy-cafe
                             <!-- Home -->
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                             <!-- About -->
-                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                            <li class="scroll-to-section"><a href="#about">Tentang</a></li>
                             <!-- Livestock -->
-                            <li class="scroll-to-section"><a href="#menu">Livestock</a></li>
+                            <li class="scroll-to-section"><a href="#menu">Hewan Ternak</a></li>
                             <!-- Contact Us -->
-                            <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li> 
+                            <li class="scroll-to-section"><a href="#reservation">Kontak Kami</a></li> 
                         </ul>        
                         <!-- ***** Menu End ***** -->
                     </nav>
@@ -85,9 +85,9 @@ https://templatemo.com/tm-558-klassy-cafe
                     <div class="left-content">
                         <div class="inner-content">
                             <h4>Ternak</h4>
-                            <h4>Pak Abdullah</h4>
+                            <h4>Kalidesl</h4>
                             <h6>HEWAN TERNAK TERBAIK</h6>
-                            <h6>YANG PERNAH ADA</h6>
+                            <h6>DI WONOSOBO</h6>
                             <div class="main-white-button scroll-to-section">
                                 <a href="#reservation">Buat Pesanan Anda</a>
                             </div>
@@ -133,13 +133,13 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="left-text-content">
                         <div class="section-heading">
-                            <h6>About Us</h6>
-                            <h2>Kualitas Ternak Terbaik dengan Harga yang Murah</h2>
+                            <h6>Tentang Kami</h6>
+                            <h2>Kualitas Ternak Terbaik dengan Harga Terjangkau</h2>
                         </div>
-                        <p>Ternak Pak Abdulah merupakan penyedia hewan ternak terbaik yang berada di Kecamatan Margadana Kota Tegal. 
-                            Disini menyediakan bermacam-macam hewan ternak dari sapi, kambing, dan domba dari berbagai umur. 
-                            Ternak Pak Abdulah juga sudah menerima setifikat hak jual ternak. 
-                            Bahkan hewan ternak pak Abdullah sudah di ekspor ke berbagai negara.</p>
+                        <p>Ternak Kalidesel merupakan penyedia hewan ternak terbaik yang berada di Kecamatan Watumalang Kabupaten Wonosobo. 
+                            Disini menyediakan bermacam-macam hewan ternak dari sapi, kambing, dan domba dari berbagai umur sesuai dengan permintaan. 
+                            Ternak Kalidesel juga sudah menerima setifikat hak jual ternak.  
+                            Serta jaminan, bahwa hewan ternak yang dijual sehat dan berkualitas.</p>
                         
                         <div class="row">
                             <div class="col-4">
@@ -173,7 +173,7 @@ https://templatemo.com/tm-558-klassy-cafe
             <div class="row">
                 <div class="col-lg-4">
                     <div class="section-heading">
-                        <h6>Our Livestock</h6>
+                        <h6>Hewan Ternak Kami</h6>
                         <h2>Pilihan Hewan Ternak Terbaik Kami</h2>
                     </div>
                 </div>
@@ -255,7 +255,7 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="col-lg-6 align-self-center">
                     <div class="left-text-content">
                         <div class="section-heading">
-                            <h6>Contact Us</h6>
+                            <h6>Kontak Kami</h6>
                             <h2>Anda Dapat Memesan Hewan Ternak Kami</h2>
                         </div>
                         <p>Anda dapat menghubungi kami melalui telepon dan email dibawah ini.</p>
@@ -263,15 +263,15 @@ https://templatemo.com/tm-558-klassy-cafe
                             <div class="col-lg-6">
                                 <div class="phone">
                                     <i class="fa fa-phone"></i>
-                                    <h4>Phone Numbers</h4>
+                                    <h4>Nomor Telepon (WA)</h4>
                                     <span><a href="#">085747414102</a></span>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="message">
                                     <i class="fa fa-envelope"></i>
-                                    <h4>Emails</h4>
-                                    <span><a href="#">ternak_abdullah@gmail.com</a></span>
+                                    <h4>Email</h4>
+                                    <span><a href="#">ternak_kalidesel@gmail.com</a></span>
                                 </div>
                             </div>
                         </div>
@@ -401,9 +401,9 @@ https://templatemo.com/tm-558-klassy-cafe
                 </div>
                 <div class="col-lg-4 col-xs-12">
                     <div class="left-text-content">
-                        <p>Hewan Ternak Pak Abdullah
+                        <p>Hewan Ternak Kalidesel
                         
-                        <br>Design: Arya Ganteng</p>
+                        <br>Developer : KKN-PPM UGN Gemilang Watumalang</p>
                     </div>
                 </div>
             </div>

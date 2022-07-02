@@ -21,18 +21,24 @@ class AuthController extends Controller
         return view('manajemen.login.regristasi');
     }
 
+    public function registrasiDoctor()
+    {
+
+        return view('manajemen.login.regristasi-doctor');
+    }
+
     public function postregistrasi(Request $request)
     {  
         $this->validate($request,[
             'name' => 'required',
             'email' => 'required',
             'password' => 'required',
-
         ]);
 
         $user = new User;
         $user->name = $request->name;
         $user->email = $request->email;
+        $user->role = $request->role;
         $user->password = bcrypt($request->password);
         $user->save();
     
@@ -50,6 +56,9 @@ class AuthController extends Controller
         ]);
 
         if(Auth::attempt($request->only('email','password'))){
+            if (Auth::user()->role == 2) {
+                return redirect(route('diagnosis.index.doctor'));
+            }
             return redirect('/manager');
         }
 

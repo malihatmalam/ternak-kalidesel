@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Livestock;
+use App\DiagnosisLivestock;
 use File;
 
 class LivestockController extends Controller
@@ -17,7 +18,7 @@ class LivestockController extends Controller
     {
         $batas = 5;
         $jumlah_hewan = Livestock::count();
-        $livestock = Livestock::paginate($batas);
+        $livestock = Livestock::with(['disease'])->paginate($batas);
         $no = $batas *($livestock->currentPage()-1);
 
         $livestock_sudah_mati = Livestock::where('status','Mati')->get();
@@ -60,8 +61,17 @@ class LivestockController extends Controller
             'jenis_kelamin' => 'required',
             'warna' => 'required|string',
             'tgl_lahir' => 'required|date',
-            'foto'=>'image|mimes:jpeg,jpg,png',
-
+            'foto'=>'image|mimes:jpeg,jpg,png|max:1024',
+        ],
+        [
+            'jenis.required' => 'Jenis hewan tidak boleh kosong',
+            'jenis_kelamin.required' => 'Jenis kelamin hewan tidak boleh kosong',
+            'warna.required' => 'Warna hewan tidak boleh kosong',
+            'tgl_lahir.required' => 'Tanggal lahir hewan tidak boleh kosong',
+            'tgl_lahir.date' => 'Tanggal lahir hewan harus berbentuk tanggal, dengan format tanggal/bulan/tahun',
+            'foto.*.image' => 'Foto hewan harus berupa gambar.',
+            'foto.*.mimes' => 'Format Foto hewan hanya berupa PNG, JPG dan JPEG',
+            'foto.*.max' => 'Ukuran foto maksimal 1 mb'
         ]);
 
 
@@ -73,7 +83,8 @@ class LivestockController extends Controller
         $livestock->warna = $request->warna;
         $livestock->tgl_lahir = $request->tgl_lahir;
         $livestock->description = $request->description;
-        $livestock->berat = $request->berat;
+        $livestock->berat = (int)preg_replace("/[^0-9]/", "", $request->berat);
+        $livestock->harga = (int)preg_replace("/[^0-9]/", "", $request->harga);
 
         
         $livestock->status = "Belum dibeli";
@@ -116,8 +127,14 @@ class LivestockController extends Controller
     public function show($id)
     {
         $livestock = Livestock::find($id);
+        $diseases = DiagnosisLivestock::with(['diagnosis'])->where('livestock_id', $livestock->id)->get();
+        $condition = 'sehat';
+
+        if( DiagnosisLivestock::where('livestock_id', $livestock->id)->where('status', 'terjangkit')->first() != null ){
+            $condition = 'sakit';
+        }
         
-        return view('manajemen.LivestockManajemen.detail_livestock', compact('livestock'));
+        return view('manajemen.LivestockManajemen.detail_livestock', compact('livestock','diseases','condition'));
     }
 
     /**
@@ -148,7 +165,15 @@ class LivestockController extends Controller
             'warna' => 'required|string',
             'tgl_lahir' => 'required|date',
             'foto'=>'image|mimes:jpeg,jpg,png',
-
+        ],[
+            'jenis.required' => 'Jenis hewan tidak boleh kosong',
+            'jenis_kelamin.required' => 'Jenis kelamin hewan tidak boleh kosong',
+            'warna.required' => 'Warna hewan tidak boleh kosong',
+            'tgl_lahir.required' => 'Tanggal lahir hewan tidak boleh kosong',
+            'tgl_lahir.date' => 'Tanggal lahir hewan harus berbentuk tanggal, dengan format tanggal/bulan/tahun',
+            'foto.*.image' => 'Foto hewan harus berupa gambar.',
+            'foto.*.mimes' => 'Format Foto hewan hanya berupa PNG, JPG dan JPEG',
+            'foto.*.max' => 'Ukuran foto maksimal 1 mb'
         ]);
 
 
@@ -160,7 +185,8 @@ class LivestockController extends Controller
         $livestock->warna = $request->warna;
         $livestock->tgl_lahir = $request->tgl_lahir;
         $livestock->description = $request->description;
-        $livestock->berat = $request->berat;
+        $livestock->berat = (int)preg_replace("/[^0-9]/", "", $request->berat);
+        $livestock->harga = (int)preg_replace("/[^0-9]/", "", $request->harga);
 
         if (request('foto')!= null){
 

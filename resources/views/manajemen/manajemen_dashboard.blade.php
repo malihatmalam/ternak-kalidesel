@@ -72,6 +72,15 @@
 									<div class="metric">
 										<span class="icon"><i class="fa fa-bar-chart"></i></span>
 										<p>
+											<span class="number">{{ $count_livestock_infected }} Ekor</span>
+											<span class="title">Hewan yang Sakit</span>
+										</p>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="metric">
+										<span class="icon"><i class="fa fa-bar-chart"></i></span>
+										<p>
 											<span class="number">{{ $jumlah_mati }} Ekor</span>
 											<span class="title">Hewan yang Mati</span>
 										</p>
