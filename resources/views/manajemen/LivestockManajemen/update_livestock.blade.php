@@ -119,6 +119,25 @@
                                 value="Rp. {{ number_format($livestock->harga) }}"
                                 placeholder="Harga hewan .... (Rupiah)">
                             <br>
+                            <!-- jenis hewan -->
+                            <div class="form-group">
+                                <label for="area" class="col-sm-3 col-form-label"> Desa  </label>
+                                <br>
+                                <br>
+                                <div class="container">
+                                    <label class="fancy-radio">
+                                        <input name="area" value="Kalidesel" type="radio"
+                                        {{ $livestock->area == 'Kalidesel' ? 'checked' : '' }}>
+                                        <span><i></i>Kalidesel</span>
+                                    </label>
+                                    <label class="fancy-radio">
+                                        <input name="area" value="Wonokampir" type="radio"
+                                        {{ $livestock->area == 'Wonokampir' ? 'checked' : '' }}>
+                                        <span><i></i>Wonokampir</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
                             <br>
 
                             <!-- foto hewan -->

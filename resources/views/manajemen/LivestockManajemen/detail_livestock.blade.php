@@ -47,6 +47,11 @@
                                     disabled>
                                 <br>
 
+                                <h5>Desa : </h5>
+                                <input class="form-control" value="Desa {{ $livestock->area }} "
+                                    disabled>
+                                <br>
+
                                 <h5>Deskripsi : </h5>
                                 <textarea class="form-control" rows="4" disabled>{{ $livestock->description }}</textarea>
                                 {{-- <p>{{ $livestock -> description }}</p> --}}

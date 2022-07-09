@@ -15,6 +15,9 @@
 Route::get('/', function () {
     return view('customer.dashboard');
 });
+Route::get('/wonokampir', function () {
+    return view('customer.dashboard-wonokampir');
+});
 Route::get('/home', 'HomeController@index');
 
 

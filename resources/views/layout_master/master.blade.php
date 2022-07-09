@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Ternak Kalidesel | Manajemen</title>
+    <title>Ternak Watumalang | Manajemen</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -36,7 +36,7 @@
 
             <div class="brand">
                 <a href="/manager">
-                    <img width="139" height="21" src="{{ asset('admin/assets/images/Logo-Ternak.png') }}"
+                    <img width="139" height="21" src="{{ asset('admin/assets/images/Logo-Ternak-Watumalang.png') }}"
                         alt="Logo Ternak Pak Abdullah" class="img-responsive logo">
                 </a>
             </div>

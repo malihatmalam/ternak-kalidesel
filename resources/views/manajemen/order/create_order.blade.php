@@ -71,6 +71,24 @@
                         <textarea class="form-control" placeholder="Alamat dimana hewan di antar..." name="address" rows="4"></textarea>
                         <br>
 
+                        <!-- area -->
+                        <div class="form-group">
+                            <label for="area" class="col-sm-6 col-form-label"> Desa yang Dipesan  </label>
+                            <br>
+                            <br>
+                            <div class="container">
+                                <label class="fancy-radio">
+                                    <input name="area" value="Kalidesel" type="radio">
+                                    <span><i></i>Kalidesel</span>
+                                </label>
+                                <label class="fancy-radio">
+                                    <input name="area" value="Wonokampir" type="radio">
+                                    <span><i></i>Wonokampir</span>
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+
                     </div>
 
                     <div class="col-md-6">

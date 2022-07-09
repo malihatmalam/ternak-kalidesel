@@ -62,6 +62,7 @@ class LivestockController extends Controller
             'warna' => 'required|string',
             'tgl_lahir' => 'required|date',
             'foto'=>'image|mimes:jpeg,jpg,png|max:1024',
+            'area' => 'required|string',
         ],
         [
             'jenis.required' => 'Jenis hewan tidak boleh kosong',
@@ -71,7 +72,8 @@ class LivestockController extends Controller
             'tgl_lahir.date' => 'Tanggal lahir hewan harus berbentuk tanggal, dengan format tanggal/bulan/tahun',
             'foto.*.image' => 'Foto hewan harus berupa gambar.',
             'foto.*.mimes' => 'Format Foto hewan hanya berupa PNG, JPG dan JPEG',
-            'foto.*.max' => 'Ukuran foto maksimal 1 mb'
+            'foto.*.max' => 'Ukuran foto maksimal 1 mb',
+            'area.required' => 'Desa tidak boleh kosong',
         ]);
 
 
@@ -85,6 +87,7 @@ class LivestockController extends Controller
         $livestock->description = $request->description;
         $livestock->berat = (int)preg_replace("/[^0-9]/", "", $request->berat);
         $livestock->harga = (int)preg_replace("/[^0-9]/", "", $request->harga);
+        $livestock->area = $request->area;
 
         
         $livestock->status = "Belum dibeli";
@@ -165,6 +168,7 @@ class LivestockController extends Controller
             'warna' => 'required|string',
             'tgl_lahir' => 'required|date',
             'foto'=>'image|mimes:jpeg,jpg,png',
+            'area' => 'required|string',
         ],[
             'jenis.required' => 'Jenis hewan tidak boleh kosong',
             'jenis_kelamin.required' => 'Jenis kelamin hewan tidak boleh kosong',
@@ -173,7 +177,8 @@ class LivestockController extends Controller
             'tgl_lahir.date' => 'Tanggal lahir hewan harus berbentuk tanggal, dengan format tanggal/bulan/tahun',
             'foto.*.image' => 'Foto hewan harus berupa gambar.',
             'foto.*.mimes' => 'Format Foto hewan hanya berupa PNG, JPG dan JPEG',
-            'foto.*.max' => 'Ukuran foto maksimal 1 mb'
+            'foto.*.max' => 'Ukuran foto maksimal 1 mb',
+            'area.required' => 'Desa tidak boleh kosong',
         ]);
 
 
@@ -187,7 +192,8 @@ class LivestockController extends Controller
         $livestock->description = $request->description;
         $livestock->berat = (int)preg_replace("/[^0-9]/", "", $request->berat);
         $livestock->harga = (int)preg_replace("/[^0-9]/", "", $request->harga);
-
+        $livestock->area = $request->area;
+        
         if (request('foto')!= null){
 
             File::delete('images/livestock/'.$livestock->foto);

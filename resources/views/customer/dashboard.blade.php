@@ -85,7 +85,7 @@ https://templatemo.com/tm-558-klassy-cafe
                     <div class="left-content">
                         <div class="inner-content">
                             <h4>Ternak</h4>
-                            <h4>Kalidesl</h4>
+                            <h4>Kalidesel</h4>
                             <h6>HEWAN TERNAK TERBAIK</h6>
                             <h6>DI WONOSOBO</h6>
                             <div class="main-white-button scroll-to-section">
@@ -298,6 +298,8 @@ https://templatemo.com/tm-558-klassy-cafe
                                 <h4>Pemesanan Hewan Ternak</h4>
                             </div>
                         
+                            <input type="hidden" name="area" value="Kalidesel">
+                            
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
                                 <input name="name" type="text" id="name" placeholder="Nama Anda" required="">

@@ -96,6 +96,7 @@
                                         <th> Nomor Pesanan </th>
                                         <th> Nama Pemesan</th>
                                         <th> Nomor Telepon </th>
+                                        <th> Order Ke Desa </th>
                                         <th> Tanggal Pembayaran </th>
                                         <th> Tanggal Antar </th>
                                         <th> Status </th>
@@ -111,6 +112,7 @@
                                             <td>{{ $od->kode }}</td>
                                             <td>{{ $od->name }}</td>
                                             <td>{{ $od->telephone }}</td>
+                                            <td>{{ $od->area }}</td>
                                             <td>{{ $od->tgl_beli->format('d/m/Y') }}</td>
                                             <td>{{ $od->tgl_antar->format('d/m/Y') }}</td>
                                             <td>

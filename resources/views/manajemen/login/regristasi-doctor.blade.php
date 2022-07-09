@@ -2,7 +2,7 @@
 <html lang="en" class="fullscreen-bg">
 
 <head>
-    <title>Ternak Kalidesel | Regristasi Tenaga Medis Hewan</title>
+    <title>Ternak Watumalang | Regristasi Tenaga Medis Hewan</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -33,8 +33,8 @@
                             <div class="header">
                                 <div class="logo text-center"><img
                                         src="{{ asset('admin/assets/images/Logo-Ternak-Coba.png') }}" width="150"
-                                        alt="Ternak Kalidesel Logo"></div>
-                                <p class="lead">Regristasi Akun Tenaga Medis Hewan Ternak Kalidesel</p>
+                                        alt="Ternak Watumalang Logo"></div>
+                                <p class="lead">Regristasi Akun Tenaga Medis Hewan Ternak Watumalang</p>
                             </div>
                             <form class="form-auth-small" action="/manager/postregistrasi" method="POST">
                                 @csrf
@@ -77,7 +77,7 @@
                     <div class="right">
                         <div class="overlay"></div>
                         <div class="content text">
-                            <h1 class="heading"><b>Tenaga Medis Hewan Ternak Kalidesel</b></h1>
+                            <h1 class="heading"><b>Tenaga Medis Hewan Ternak Watumalang</b></h1>
                             <p><b>Silahkan Masuk</b></p>
                         </div>
                     </div>

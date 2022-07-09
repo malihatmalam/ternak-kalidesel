@@ -161,6 +161,9 @@
                                                     <h4 > Atas Nama :</h4>
                                                     <h4 > <b>{{ $order -> name }}</b> </h4>
                                                     <br>
+                                                    <h4 > Pesan Ke Desa :</h4>
+                                                    <h4 > <b>Desa {{ $order -> area }}</b> </h4>
+                                                    <br>
 
                                                 <div class="col-sm-6">
                                                     <h3 > <b>Status Pesanan :</b> </h3>

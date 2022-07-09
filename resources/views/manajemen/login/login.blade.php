@@ -2,7 +2,7 @@
 <html lang="en" class="fullscreen-bg">
 
 <head>
-	<title>Ternak Kalidesel | Login</title>
+	<title>Ternak Watumalang | Login</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -30,8 +30,8 @@
 					<div class="left">
 						<div class="content">
 							<div class="header">
-								<div class="logo text-center"><img src="{{asset('admin/assets/images/Logo-Ternak-Coba.png')}}" width="150" alt="Ternak Kalidesel Logo"></div>
-                                <p class="lead">Masuk sebagai Manajemen Ternak Kalidesel</p>
+								<div class="logo text-center"><img src="{{asset('admin/assets/images/Logo-Ternak-Coba.png')}}" width="150" alt="Ternak Watumalang Logo"></div>
+                                <p class="lead">Masuk sebagai Manajemen Ternak Watumalang</p>
 							</div>
                             <form class="form-auth-small" action="/manager/postlogin" method="POST" >
                                 @csrf
@@ -62,7 +62,7 @@
 					<div class="right">
 						<div class="overlay"></div>
 						<div class="content text">
-							<h1 class="heading"><b>Manajemen Ternak Kalidesel</b></h1>
+							<h1 class="heading"><b>Manajemen Ternak Watumalang</b></h1>
 							<p><b>Silahkan Masuk</b></p>
 						</div>
 					</div>

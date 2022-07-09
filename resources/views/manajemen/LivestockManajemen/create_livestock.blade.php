@@ -101,6 +101,24 @@
                                 placeholder="Harga hewan .... (Rupiah)">
                             <br>
 
+                            <!-- area -->
+                            <div class="form-group">
+                                <label for="area" class="col-sm-3 col-form-label"> Desa  </label>
+                                <br>
+                                <br>
+                                <div class="container">
+                                    <label class="fancy-radio">
+                                        <input name="area" value="Kalidesel" type="radio">
+                                        <span><i></i>Kalidesel</span>
+                                    </label>
+                                    <label class="fancy-radio">
+                                        <input name="area" value="Wonokampir" type="radio">
+                                        <span><i></i>Wonokampir</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+
                             <!-- foto hewan -->
                             <div class="form-group row">
                                 <label for="foto_hewan" class="col-sm-3 col-form-label"> Upload Foto </label>

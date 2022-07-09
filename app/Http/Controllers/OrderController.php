@@ -68,6 +68,7 @@ class OrderController extends Controller
         $order->address = $request->address;
         $order->manager_notes = $request->manager_notes;        
         $order->status = "Menunggu";
+        $order->area = $request->area;
 
         $order->save();
 
@@ -102,6 +103,8 @@ class OrderController extends Controller
         $order->address = $request->address;
         $order->manager_notes = $request->manager_notes;        
         $order->status = "Menunggu";
+        $order->area = $request->area;
+
 
         $order->save();
 
