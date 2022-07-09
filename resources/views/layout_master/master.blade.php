@@ -36,7 +36,7 @@
 
             <div class="brand">
                 <a href="/manager">
-                    <img width="139" height="21" src="{{ asset('admin/assets/images/Logo Ternak.png') }}"
+                    <img width="139" height="21" src="{{ asset('admin/assets/images/Logo-Ternak.png') }}"
                         alt="Logo Ternak Pak Abdullah" class="img-responsive logo">
                 </a>
             </div>
@@ -54,7 +54,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 
 
-                                <img width="24" height="24" src="{{ asset('admin/assets/img/user.png') }}"
+                                <img width="24" height="24" src="{{ asset('admin/assets/img/user-ok.png') }}"
                                     class="img-circle" alt="Avatar">
 
 

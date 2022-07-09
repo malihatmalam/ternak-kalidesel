@@ -30,7 +30,7 @@
 					<div class="left">
 						<div class="content">
 							<div class="header">
-								<div class="logo text-center"><img src="{{asset('admin/assets/images/Logo Ternak Coba.png')}}" width="150" alt="Ternak Kalidesel Logo"></div>
+								<div class="logo text-center"><img src="{{asset('admin/assets/images/Logo-Ternak-Coba.png')}}" width="150" alt="Ternak Kalidesel Logo"></div>
                                 <p class="lead">Masuk sebagai Manajemen Ternak Kalidesel</p>
 							</div>
                             <form class="form-auth-small" action="/manager/postlogin" method="POST" >
@@ -54,7 +54,7 @@
 								</div> -->
 								<button type="submit" class="btn btn-primary btn-lg btn-block">LOGIN</button>
 								<div class="bottom">
-									<span class="helper-text"><i class="fa "></i> <a href="/manager/regristasi">Restritasi Akun Baru</a></span>
+									<span class="helper-text"><i class="fa "></i> <a href="/manager/regristasi">Registrasi Akun Baru</a></span>
 								</div>
 							</form>
 						</div>

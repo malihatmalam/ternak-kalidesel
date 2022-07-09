@@ -32,7 +32,7 @@
                         <div class="content">
                             <div class="header">
                                 <div class="logo text-center"><img
-                                        src="{{ asset('admin/assets/images/Logo Ternak Coba.png') }}" width="150"
+                                        src="{{ asset('admin/assets/images/Logo-Ternak-Coba.png') }}" width="150"
                                         alt="Ternak Kalidesel Logo"></div>
                                 <p class="lead">Regristasi Akun Tenaga Medis Hewan Ternak Kalidesel</p>
                             </div>

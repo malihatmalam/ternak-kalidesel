@@ -69,7 +69,7 @@
 
                         <!-- Alamat -->
                         <label for="alamat-orders" class="col-sm-4 col-form-label" > Alamat Pemesan (Alamat Hewan di Antar) </label>
-                        <textarea class="form-control" placeholder="Alamat dimana hewan di antar..." name="address" rows="4" value="{{ $order -> address }}"></textarea>
+                        <textarea class="form-control" placeholder="Alamat dimana hewan di antar..." name="address" rows="4">{{ $order -> address }}</textarea>
                         <br>
 
                     </div>
@@ -78,7 +78,7 @@
                         
                         <!-- Pesan dari Pemesan -->
                         <label for="message-orders" class="col-sm-5 col-form-label" > Pesan dari Pemesan </label>
-                        <textarea class="form-control" placeholder="Pesan dari si Pemesan ..." name="message" rows="8" value="{{ $order -> address }}"></textarea>
+                        <textarea class="form-control" placeholder="Pesan dari si Pemesan ..." name="message" rows="8">{{ $order -> message }}</textarea>
                         <br>
 
                         <!-- Catatan Managemen -->
