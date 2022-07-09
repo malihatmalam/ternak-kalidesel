@@ -80,6 +80,7 @@
                                     <th> Tipe </th>
                                     <th> Berat </th>
                                     <th> Harga </th>
+                                    <th> Desa </th>
                                     <th> Kondisi </th> {{-- Sakit/Sehat --}}
                                     <th> Status </th>
                                     <th class="datatable-nosort"> Aksi </th>
@@ -107,6 +108,7 @@
                                         <td>{{ $animal->type }}</td>
                                         <td>{{ $animal->berat }} Kg</td>
                                         <td>Rp. {{ number_format($animal->harga) }}</td>
+                                        <td>{{ $animal->area }}</td>
                                         <td>
                                             @if ( $animal->condition == 'sehat')
                                                 <span class="label label-success">Sehat</span>

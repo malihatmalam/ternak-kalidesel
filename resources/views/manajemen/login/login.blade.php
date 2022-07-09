@@ -30,7 +30,7 @@
 					<div class="left">
 						<div class="content">
 							<div class="header">
-								<div class="logo text-center"><img src="{{asset('admin/assets/images/Logo-Ternak-Coba.png')}}" width="150" alt="Ternak Watumalang Logo"></div>
+								<div class="logo text-center"><img src="{{asset('admin/assets/images/Logo-Ternak-Coba-Wonokampir.png')}}" width="150" alt="Ternak Watumalang Logo"></div>
                                 <p class="lead">Masuk sebagai Manajemen Ternak Watumalang</p>
 							</div>
                             <form class="form-auth-small" action="/manager/postlogin" method="POST" >
